@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/inputbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="input"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputbutton"/>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_string"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@id/inputbutton"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/checktodo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/unchecked"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@+id/todolistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/checktodo"
+        android:paddingStart="5dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/todocontents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Do"
+            android:layout_toStartOf="@+id/deletetodo"
+            android:layout_centerVertical="true"/>
+        <ImageButton
+            android:id="@+id/deletetodo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/delete"
+            android:layout_toLeftOf="@+id/prioritytodo"/>
+
+        <ImageButton
+            android:id="@+id/prioritytodo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_black"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
